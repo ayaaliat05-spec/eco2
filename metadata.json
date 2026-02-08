@@ -1,0 +1,7 @@
+{
+  "name": " Eco - Material Science AI",
+  "description": "An advanced AI assistant for material chemistry, quality control, and data analysis.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
