@@ -1,3 +1,4 @@
+
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -8,6 +9,10 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        // هذا هو الجزء الذي أضفناه للسماح بالرابط الخاص بك
+        allowedHosts: [
+          'eco2-production.up.railway.app'
+        ],
       },
       plugins: [react()],
       define: {
